@@ -7,102 +7,225 @@
 </head>
 <body>
     <div class="background-image"></div>
-    <div class="timeline">
-        <div class="timeline-card">
-            <h3>1991</h3>
-            <img src="images/Sonic 1.jpg" alt="Sonic 1991">
-            <p>Sonic the Hedgehog released on Sega Genesis.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>1992</h3>
-            <img src="images/Sonic 2.png" alt="Sonic 2 1992">
-            <p>Sonic the Hedgehog 2 released, introducing Tails.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>1994</h3>
-            <img src="images/Sonic 3.jpg" alt="Sonic 3 1994">
-            <p>Sonic the Hedgehog 3 released, introducing new zones and features.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>1994</h3>
-            <img src="images/Sonic and Knuckles.jpg" alt="Sonic & Knuckles 1994">
-            <p>Sonic & Knuckles released, introducing Knuckles and lock-on technology.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>1998</h3>
-            <img src="images/Sonic_Adventure.png" alt="Sonic Adventure 1998">
-            <p>Sonic Adventure released on Sega Dreamcast, bringing Sonic into 3D.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>2001</h3>
-            <img src="images/Sonic Adventure 2.jpeg" alt="Sonic Adventure 2 2001">
-            <p>Sonic Adventure 2 released, introducing Shadow the Hedgehog.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>2003</h3>
-            <img src="images/Sonic Heroes.webp" alt="Sonic Heroes 2003">
-            <p>Sonic Heroes released, featuring team-based gameplay.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>2005</h3>
-            <img src="images/Sonic Rush.jpg" alt="Sonic Rush 2005">
-            <p>Sonic Rush released for Nintendo DS, introducing Blaze the Cat.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>2006</h3>
-            <img src="images/Sonic 06.jpeg" alt="Sonic the Hedgehog 2006">
-            <p>Sonic the Hedgehog (2006) released for PlayStation 3 and Xbox 360.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>2007</h3>
-            <img src="images/Sonic and the Secret Rings.png" alt="Sonic and the Secret Rings 2007">
-            <p>Sonic and the Secret Rings released for Wii.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>2007</h3>
-            <img src="images/Sonic Rush Adventure.jpg" alt="Sonic Rush Adventure 2007">
-            <p>Sonic Rush Adventure released for Nintendo DS.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>2008</h3>
-            <img src="images/Sonic Unleashed.jpg" alt="Sonic Unleashed 2008">
-            <p>Sonic Unleashed released, introducing the Werehog and boost gameplay.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>2009</h3>
-            <img src="images/Sonic_and_the_Black_Knight_Cover.jpg" alt="Sonic and the Black Knight 2009">
-            <p>Sonic and the Black Knight released for Wii.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>2010</h3>
-            <img src="images/Sonic Colors.jpg" alt="Sonic Colors 2010">
-            <p>Sonic Colors released for Wii and DS, introducing Wisps.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>2011</h3>
-            <img src="images/Sonic_Generations.webp" alt="Sonic Generations 2011">
-            <p>Sonic Generations released, celebrating Sonic's 20th anniversary.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>2013</h3>
-            <img src="images/Sonic Lost World.jpg" alt="Sonic Lost World 2013">
-            <p>Sonic Lost World released for Wii U and 3DS.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>2017</h3>
-            <img src="images/Sonic Mania.webp" alt="Sonic Mania 2017">
-            <p>Sonic Mania released, returning to classic 2D gameplay.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>2017</h3>
-            <img src="images/Sonic Forces.jpeg" alt="Sonic Forces 2017">
-            <p>Sonic Forces released, featuring custom characters and modern/classic gameplay.</p>
-        </div>
-        <div class="timeline-card">
-            <h3>2022</h3>
-            <img src="images/Sonic Frontiers.avif" alt="Sonic Frontiers 2022">
-            <p>Sonic Frontiers released, introducing open-zone gameplay.</p>
+    <div class="tabs-container">
+        <div class="tabs">
+            <button class="tab active" id="tab-timeline">Timeline</button>
+            <button class="tab" id="tab-copyright">Copyright Notes</button>
         </div>
     </div>
+    <div id="timeline-section">
+        <div class="timeline">
+            <div class="timeline-card"
+                data-title="Sonic the Hedgehog (1991)"
+                data-img="images/Sonic 1.jpg"
+                data-description="The original Sonic the Hedgehog introduced players to the speedy blue hedgehog and his nemesis, Dr. Robotnik. Set in the lush Green Hill Zone and beyond, Sonic's debut was a revolution in platforming and established Sega's mascot as a gaming icon."
+                data-story="Dr. Robotnik has captured the animals of South Island and turned them into robots. Sonic races through various zones to stop Robotnik's evil plans and free his friends."
+                data-audio="audio/01 Green Hill Zone Act 1.mp3">
+                <h3>1991</h3>
+                <img src="images/Sonic 1.jpg" alt="Sonic 1991">
+                <p>Sonic the Hedgehog released on Sega Genesis.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic the Hedgehog 2 (1992)"
+                data-img="images/Sonic 2.png"
+                data-description="Sonic 2 introduced Tails, Sonic's loyal sidekick, and the iconic Spin Dash move. With new zones, faster gameplay, and two-player support, it became one of the best-selling Genesis games and a fan favorite."
+                data-story="Sonic teams up with his new friend Tails to stop Dr. Robotnik from building the Death Egg, a massive space station. Together, they race through new zones and collect Chaos Emeralds to thwart Robotnik's plans."
+                data-audio="audio/13. Emerald Hill Zone - Act 1.mp3">
+                <h3>1992</h3>
+                <img src="images/Sonic 2.png" alt="Sonic 2 1992">
+                <p>Sonic the Hedgehog 2 released, introducing Tails.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic the Hedgehog 3 (1994)"
+                data-img="images/Sonic 3.jpg"
+                data-description="Sonic 3 expanded the Sonic universe with larger levels, save files, and new power-ups. It set the stage for the introduction of Knuckles and was designed to connect with Sonic & Knuckles for a complete adventure."
+                data-story="After the events of Sonic 2, Sonic and Tails crash-land on Angel Island, where they encounter Knuckles, who has been tricked by Dr. Robotnik. Sonic must recover the Chaos Emeralds and stop Robotnik from relaunching the Death Egg."
+                data-audio="audio/1-05. Angel Island Zone - Act 1.mp3">
+                <h3>1994</h3>
+                <img src="images/Sonic 3.jpg" alt="Sonic 3 1994">
+                <p>Sonic the Hedgehog 3 released, introducing new zones and features.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic & Knuckles (1994)"
+                data-img="images/Sonic and Knuckles.jpg"
+                data-description="Sonic & Knuckles introduced lock-on technology, allowing players to combine it with Sonic 3 for the full experience. Knuckles became a playable character, bringing new abilities and routes to explore."
+                data-story="Sonic continues his quest to stop Dr. Robotnik and the Death Egg, while Knuckles defends Angel Island from perceived threats. The two heroes' paths cross as they each try to protect their world."
+                data-audio="audio/01 - Title Screen.mp3">
+                <h3>1994</h3>
+                <img src="images/Sonic and Knuckles.jpg" alt="Sonic & Knuckles 1994">
+                <p>Sonic & Knuckles released, introducing Knuckles and lock-on technology.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic Adventure (1998)"
+                data-img="images/Sonic_Adventure.png"
+                data-description="Sonic Adventure brought Sonic into 3D with open environments, multiple playable characters, and a cinematic story. Its Dreamcast debut was praised for its speed and ambition, setting a new standard for the series."
+                data-story="A new threat, Chaos, is unleashed by Dr. Robotnik in Station Square. Sonic and friends must collect the Chaos Emeralds and stop Chaos from destroying the city."
+                data-audio="audio/2-33 Open Your Heart.mp3">
+                <h3>1998</h3>
+                <img src="images/Sonic_Adventure.png" alt="Sonic Adventure 1998">
+                <p>Sonic Adventure released on Sega Dreamcast, bringing Sonic into 3D.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic Adventure 2 (2001)"
+                data-img="images/Sonic Adventure 2.jpeg"
+                data-description="Sonic Adventure 2 introduced Shadow the Hedgehog and a dual-story system. The game featured fast-paced action stages, Chao raising, and memorable music, becoming a cult classic among fans."
+                data-story="Sonic is framed for crimes he didn't commit and must clear his name while facing Shadow the Hedgehog, a mysterious new rival. The story unfolds from both the heroes' and villains' perspectives, culminating in a battle to save the world from the Space Colony ARK."
+                data-audio="audio/28 Live & Learn ...Main Theme of ''Sonic Adventure 2''.mp3">
+                <h3>2001</h3>
+                <img src="images/Sonic Adventure 2.jpeg" alt="Sonic Adventure 2 2001">
+                <p>Sonic Adventure 2 released, introducing Shadow the Hedgehog.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic Heroes (2003)"
+                data-img="images/Sonic Heroes.webp"
+                data-description="Sonic Heroes featured team-based gameplay, letting players switch between speed, power, and flight characters. Its colorful visuals and cooperative mechanics offered a fresh take on the Sonic formula."
+                data-story="Four teams of three characters each set out on their own adventures, ultimately confronting the return of Metal Sonic, who threatens the world with his new power."
+                data-audio="audio/1-01 Sonic Heroes (opening ver.).mp3">
+                <h3>2003</h3>
+                <img src="images/Sonic Heroes.webp" alt="Sonic Heroes 2003">
+                <p>Sonic Heroes released, featuring team-based gameplay.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic Rush (2005)"
+                data-img="images/Sonic Rush.jpg"
+                data-description="Sonic Rush brought high-speed 2D action to the Nintendo DS, introducing Blaze the Cat and a unique dual-screen presentation. Its energetic soundtrack and boost gameplay were highly praised."
+                data-story="Sonic and Blaze the Cat, from another dimension, must work together to stop Dr. Eggman and Eggman Nega from obtaining the Sol Emeralds and causing chaos across both their worlds."
+                data-audio="audio/08 A New Day Sonic Rush OST.mp3">
+                <h3>2005</h3>
+                <img src="images/Sonic Rush.jpg" alt="Sonic Rush 2005">
+                <p>Sonic Rush released for Nintendo DS, introducing Blaze the Cat.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic the Hedgehog (2006)"
+                data-img="images/Sonic 06.jpeg"
+                data-description="Known as 'Sonic 06', this ambitious reboot for PlayStation 3 and Xbox 360 featured multiple playable characters and a dramatic story. Despite its troubled launch, it remains infamous in Sonic history."
+                data-story="Sonic tries to save Princess Elise from Dr. Eggman, but a new villain, Mephiles, manipulates time and reality. Sonic, Shadow, and Silver must join forces to prevent the destruction of the world."
+                data-audio="audio/1-01 - HIS WORLD ~THEME OF SONIC THE HEDGEHOG~.mp3">
+                <h3>2006</h3>
+                <img src="images/Sonic 06.jpeg" alt="Sonic the Hedgehog 2006">
+                <p>Sonic the Hedgehog (2006) released for PlayStation 3 and Xbox 360.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic and the Secret Rings (2007)"
+                data-img="images/Sonic and the Secret Rings.png"
+                data-description="Sonic and the Secret Rings took Sonic on a storybook adventure inspired by Arabian Nights. With motion controls and a unique leveling system, it offered a different take on Sonic's gameplay."
+                data-story="Sonic is transported into the world of the Arabian Nights and must collect the seven World Rings to stop the evil Erazor Djinn from rewriting the storybook's reality."
+                data-audio="audio/01 - SEVEN RINGS IN HAND.mp3">
+                <h3>2007</h3>
+                <img src="images/Sonic and the Secret Rings.png" alt="Sonic and the Secret Rings 2007">
+                <p>Sonic and the Secret Rings released for Wii.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic Rush Adventure (2007)"
+                data-img="images/Sonic Rush Adventure.jpg"
+                data-description="A sequel to Sonic Rush, this DS title added seafaring exploration and new islands to discover. Blaze the Cat returned, and the game featured new mechanics and boss battles."
+                data-story="Sonic and Tails are transported to Blaze's world, where they help her defend the Sol Emeralds from a band of pirates led by Captain Whisker."
+                data-audio="audio/1. A New Venture (Title Theme).mp3">
+                <h3>2007</h3>
+                <img src="images/Sonic Rush Adventure.jpg" alt="Sonic Rush Adventure 2007">
+                <p>Sonic Rush Adventure released for Nintendo DS.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic Unleashed (2008)"
+                data-img="images/Sonic Unleashed.jpg"
+                data-description="Sonic Unleashed introduced the boost mechanic and the Werehog, blending high-speed daytime stages with combat-focused night stages. Its graphics engine and global adventure were technical achievements."
+                data-story="Dr. Eggman shatters the world and transforms Sonic into a Werehog. Sonic must restore the Chaos Emeralds and the planet, battling Eggman and Dark Gaia."
+                data-audio="audio/01 - The World Adventure -Orchestral Theme-.mp3">
+                <h3>2008</h3>
+                <img src="images/Sonic Unleashed.jpg" alt="Sonic Unleashed 2008">
+                <p>Sonic Unleashed released, introducing the Werehog and boost gameplay.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic and the Black Knight (2009)"
+                data-img="images/Sonic_and_the_Black_Knight_Cover.jpg"
+                data-description="Sonic and the Black Knight continued the storybook series, sending Sonic to the world of King Arthur. Swordplay and a branching story made this Wii exclusive a unique entry in the franchise."
+                data-story="Sonic is summoned to the world of King Arthur and must wield the sacred sword Caliburn to defeat the corrupted Black Knight and restore peace to the kingdom."
+                data-audio="audio/01. KNIGHT OF THE WIND.mp3">
+                <h3>2009</h3>
+                <img src="images/Sonic_and_the_Black_Knight_Cover.jpg" alt="Sonic and the Black Knight 2009">
+                <p>Sonic and the Black Knight released for Wii.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic Colors (2010)"
+                data-img="images/Sonic Colors.jpg"
+                data-description="Sonic Colors revitalized the series with vibrant visuals, creative level design, and the introduction of Wisps. Its blend of 2D and 3D gameplay was well received by fans and critics."
+                data-story="Dr. Eggman builds an interstellar amusement park as a cover for enslaving the alien Wisps. Sonic teams up with the Wisps to free them and stop Eggman's evil plans."
+                data-audio="audio/1.01 Reach For The Stars -Opening Theme-.mp3">
+                <h3>2010</h3>
+                <img src="images/Sonic Colors.jpg" alt="Sonic Colors 2010">
+                <p>Sonic Colors released for Wii and DS, introducing Wisps.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic Generations (2011)"
+                data-img="images/Sonic_Generations.webp"
+                data-description="Sonic Generations celebrated Sonic's 20th anniversary by combining classic and modern gameplay styles. Players revisited iconic stages in both 2D and 3D, making it a nostalgic favorite."
+                data-story="A mysterious force called the Time Eater pulls Sonic and his friends through time. Classic and Modern Sonic must team up to restore the timeline and save their friends."
+                data-audio="audio/1-07 White Space.mp3">
+                <h3>2011</h3>
+                <img src="images/Sonic_Generations.webp" alt="Sonic Generations 2011">
+                <p>Sonic Generations released, celebrating Sonic's 20th anniversary.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic Lost World (2013)"
+                data-img="images/Sonic Lost World.jpg"
+                data-description="Sonic Lost World experimented with parkour mechanics and cylindrical level design. Its colorful visuals and new enemies, the Deadly Six, offered a fresh experience on Wii U and 3DS."
+                data-story="Sonic and Tails crash on the Lost Hex, where they face the Deadly Six, a group of powerful new enemies who threaten both the Lost Hex and the world below."
+                data-audio="audio/01 - Wonder World - Title Theme -.mp3">
+                <h3>2013</h3>
+                <img src="images/Sonic Lost World.jpg" alt="Sonic Lost World 2013">
+                <p>Sonic Lost World released for Wii U and 3DS.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic Mania (2017)"
+                data-img="images/Sonic Mania.webp"
+                data-description="Sonic Mania was a love letter to classic Sonic, developed by fans-turned-pros. Featuring remixed and original zones, it captured the spirit of the Genesis era with modern polish."
+                data-story="Sonic, Tails, and Knuckles discover the mysterious Phantom Ruby and must stop Dr. Eggman and his new group, the Hard-Boiled Heavies, from using its power to reshape reality."
+                data-audio="audio/1.01 Title Screen.mp3">
+                <h3>2017</h3>
+                <img src="images/Sonic Mania.webp" alt="Sonic Mania 2017">
+                <p>Sonic Mania released, returning to classic 2D gameplay.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic Forces (2017)"
+                data-img="images/Sonic Forces.jpeg"
+                data-description="Sonic Forces combined modern, classic, and custom hero gameplay. Players could create their own character and join Sonic in a battle against Dr. Eggman and Infinite."
+                data-story="Dr. Eggman conquers the world with the help of Infinite, a mysterious new villain. Sonic, Classic Sonic, and a custom hero lead the resistance to reclaim the planet."
+                data-audio="audio/01 - Douglas Robb from Hoobastank - Fist Bump.mp3">
+                <h3>2017</h3>
+                <img src="images/Sonic Forces.jpeg" alt="Sonic Forces 2017">
+                <p>Sonic Forces released, featuring custom characters and modern/classic gameplay.</p>
+            </div>
+            <div class="timeline-card"
+                data-title="Sonic Frontiers (2022)"
+                data-img="images/Sonic Frontiers.avif"
+                data-description="Sonic Frontiers introduced open-zone gameplay, blending traditional Sonic speed with exploration and puzzles. Its new approach marked a bold step forward for the franchise."
+                data-story="Sonic searches for his friends on the mysterious Starfall Islands, uncovering ancient secrets and battling new threats in a vast open world."
+                data-audio="audio/I’m Here.mp3">
+                <h3>2022</h3>
+                <img src="images/Sonic Frontiers.avif" alt="Sonic Frontiers 2022">
+                <p>Sonic Frontiers released, introducing open-zone gameplay.</p>
+            </div>
+        </div>
+    </div>
+    <div id="copyright-section" style="display:none;">
+        <div class="copyright-notes">
+            <h2>Copyright Notes</h2>
+            <p>
+                This project is a fan-made timeline created solely for the entertainment of Sonic the Hedgehog fans and for creative, non-commercial purposes. No profit is being made from this project. All Sonic the Hedgehog characters, games, images, music, and related intellectual property are &copy; SEGA Holdings Co., Ltd. and their respective owners. This project is not affiliated with or endorsed by SEGA.<br><br>
+                Please support the official Sonic the Hedgehog games, music, and media by purchasing and enjoying the official releases.
+            </p>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="modal-close" class="modal-close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-img" src="" alt="" />
+            <p id="modal-description"></p>
+            <div id="modal-story" style="margin-top:18px; color:#222; font-size:1.05rem;"></div>
+            <audio id="modal-audio"></audio>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

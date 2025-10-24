@@ -50,6 +50,13 @@ body {
     left: 50%;
     transform: translateX(-50%);
     border-left: 6px solid #3498db;
+    transition: transform 0.25s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.25s;
+}
+
+.timeline-card:hover {
+    transform: translateX(-50%) scale(1.07);
+    box-shadow: 0 6px 24px rgba(52, 152, 219, 0.18);
+    z-index: 2;
 }
 
 .timeline-card h3 {
@@ -70,4 +77,116 @@ body {
     margin-bottom: 12px;
     display: block;
     background: #eaeaea; /* Optional: helps images with transparency look better */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.6);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 12px;
+    max-width: 480px;
+    width: 90vw;
+    padding: 32px 24px 24px 24px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    position: relative;
+    text-align: center;
+    animation: modal-pop 0.2s;
+}
+
+@keyframes modal-pop {
+    from { transform: scale(0.92); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.modal-content img {
+    width: 100%;
+    max-height: 260px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    background: #eaeaea;
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 2rem;
+    color: #3498db;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.15s;
+}
+
+.modal-close:hover {
+    color: #217dbb;
+}
+
+#modal-audio {
+    display: none;
+}
+
+.tabs-container {
+    width: 600px;
+    margin: 32px auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.tabs {
+    display: flex;
+    gap: 0;
+    background: #e3f1fb;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(52,152,219,0.06);
+}
+
+.tab {
+    padding: 14px 36px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    color: #3498db;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+
+.tab.active, .tab:focus {
+    background: #3498db;
+    color: #fff;
+}
+
+#copyright-section {
+    width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 8px rgba(52,152,219,0.06);
+    padding: 32px 24px;
+}
+
+#copyright-section h2 {
+    margin-top: 0;
+    color: #3498db;
+}
+
+#copyright-section p {
+    color: #333;
+    font-size: 1.05rem;
+    line-height: 1.6;
 }
