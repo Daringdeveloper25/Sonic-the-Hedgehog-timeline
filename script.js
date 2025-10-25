@@ -54,20 +54,35 @@ document.addEventListener('DOMContentLoaded', function () {
     // Tab switching logic
     const tabTimeline = document.getElementById('tab-timeline');
     const tabCopyright = document.getElementById('tab-copyright');
+    const tabAchievement = document.getElementById('tab-achievement');
     const timelineSection = document.getElementById('timeline-section');
     const copyrightSection = document.getElementById('copyright-section');
+    const achievementSection = document.getElementById('achievement-section');
 
     tabTimeline.addEventListener('click', function () {
         tabTimeline.classList.add('active');
         tabCopyright.classList.remove('active');
+        tabAchievement.classList.remove('active');
         timelineSection.style.display = '';
         copyrightSection.style.display = 'none';
+        achievementSection.style.display = 'none';
     });
 
     tabCopyright.addEventListener('click', function () {
         tabCopyright.classList.add('active');
         tabTimeline.classList.remove('active');
+        tabAchievement.classList.remove('active');
         timelineSection.style.display = 'none';
         copyrightSection.style.display = '';
+        achievementSection.style.display = 'none';
+    });
+
+    tabAchievement.addEventListener('click', function () {
+        tabAchievement.classList.add('active');
+        tabTimeline.classList.remove('active');
+        tabCopyright.classList.remove('active');
+        timelineSection.style.display = 'none';
+        copyrightSection.style.display = 'none';
+        achievementSection.style.display = '';
     });
 });

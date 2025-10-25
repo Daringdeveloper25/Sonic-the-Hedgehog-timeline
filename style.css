@@ -190,3 +190,23 @@ body {
     font-size: 1.05rem;
     line-height: 1.6;
 }
+
+#achievement-section {
+    width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 8px rgba(52,152,219,0.06);
+    padding: 32px 24px;
+}
+
+#achievement-section h2 {
+    margin-top: 0;
+    color: #3498db;
+}
+
+#achievement-section p {
+    color: #333;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
