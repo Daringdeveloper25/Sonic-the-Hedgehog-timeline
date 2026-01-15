@@ -61,7 +61,7 @@ body {
 
 .timeline-card h3 {
     margin-top: 0;
-    color: #3498db;
+    color: #a70000fe;
 }
 
 .timeline-card p {
@@ -125,18 +125,14 @@ body {
     top: 12px;
     right: 18px;
     font-size: 2rem;
-    color: #3498db;
+    color: #0078c8;
     cursor: pointer;
     user-select: none;
     transition: color 0.15s;
 }
 
 .modal-close:hover {
-    color: #217dbb;
-}
-
-#modal-audio {
-    display: none;
+    color: #0071bd;
 }
 
 .tabs-container {

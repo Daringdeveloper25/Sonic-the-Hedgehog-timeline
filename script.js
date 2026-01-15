@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const modalDesc = document.getElementById('modal-description');
     const modalStory = document.getElementById('modal-story');
     const modalClose = document.getElementById('modal-close');
-    const modalAudio = document.getElementById('modal-audio');
 
     document.querySelectorAll('.timeline-card').forEach(card => {
         card.addEventListener('click', function () {
@@ -14,27 +13,12 @@ document.addEventListener('DOMContentLoaded', function () {
             modalImg.alt = card.getAttribute('data-title');
             modalDesc.textContent = card.getAttribute('data-description');
             modalStory.textContent = card.getAttribute('data-story') ? "Story: " + card.getAttribute('data-story') : "";
-            const audioSrc = card.getAttribute('data-audio');
-            if (audioSrc) {
-                modalAudio.src = audioSrc;
-                modalAudio.load();
-                modalAudio.play().catch(() => {
-                    // Optionally handle play errors here
-                });
-                modalAudio.style.display = 'block';
-            } else {
-                modalAudio.pause();
-                modalAudio.src = '';
-                modalAudio.style.display = 'none';
-            }
             modal.classList.add('open');
         });
     });
 
     function closeModal() {
         modal.classList.remove('open');
-        modalAudio.pause();
-        modalAudio.currentTime = 0;
     }
 
     modalClose.addEventListener('click', closeModal);
